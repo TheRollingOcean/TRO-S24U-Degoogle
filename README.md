@@ -165,8 +165,7 @@ Concise menu-tree (top → child → toggle/action)
             Nearby device-related features (Quick Share / SmartThings Find integration)
                 Disable Quick Share / SmartThings Find components as needed
 
-
-**Disabling Sensors instructions **
+**Disabling Sensors instructions**
 Quick summary menu tree (top → child → toggle/action)
 
     Settings
@@ -187,28 +186,29 @@ Quick summary menu tree (top → child → toggle/action)
         Connections / Location / Apps (for related effects)
             Verify Find My, location services, Bluetooth behavior (these may be impacted)
 
-ADB Commands:
-    adb shell settings put global ble_scan_always_enabled 0
-    adb shell pm disable-user --user 0 com.android.nearby.halfsheet
-    adb shell pm disable-user --user 0 com.google.android.nearby
-    adb shell pm disable-user --user 0 com.samsung.android.nearbyscanning
-    adb shell settings put secure fmm_offline_find_enabled 0
-    adb shell settings put secure fmm_offline_find_support 0
-    adb shell settings put secure offline_find_support 0
-    adb shell settings put secure offline_find_enabled 0
-    adb shell pm disable-user --user 0 com.google.android.gms.nearby.exposurenotification
-    adb shell pm disable-user --user 0 com.google.android.gms.nearby.messages
-    adb shell pm disable-user --user 0 com.google.android.gms.location.reporting
-    adb shell pm disable-user --user 0 com.google.android.gms.location.history
-    adb shell settings put global settings_bluetooth_le_scan_mode 0
+**BLE ADB Commands:**
+```
+adb shell settings put global ble_scan_always_enabled 0
+adb shell pm disable-user --user 0 com.android.nearby.halfsheet
+adb shell pm disable-user --user 0 com.google.android.nearby
+adb shell pm disable-user --user 0 com.samsung.android.nearbyscanning
+adb shell settings put secure fmm_offline_find_enabled 0
+adb shell settings put secure fmm_offline_find_support 0
+adb shell settings put secure offline_find_support 0
+adb shell settings put secure offline_find_enabled 0
+adb shell pm disable-user --user 0 com.google.android.gms.nearby.exposurenotification
+adb shell pm disable-user --user 0 com.google.android.gms.nearby.messages
+adb shell pm disable-user --user 0 com.google.android.gms.location.reporting
+adb shell pm disable-user --user 0 com.google.android.gms.location.history
+adb shell settings put global settings_bluetooth_le_scan_mode 0
+```
 
 
 
-**Replacement APP stack. **
+**Replacement APP stack.**
 
-**Rethink **
-    Block all except bypassed apps and IPs
-
-Configure how you want but things like Bluetooth won't be able to squack out. Unless you like that telemtry going back to Samsung. 
+**Rethink**
+    
+In global firewall Block all except bypassed apps and IPs
 
 ADB, Shizuku, FreezeYou (I really like the freeze shortcuts you can make.)
