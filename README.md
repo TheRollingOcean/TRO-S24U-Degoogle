@@ -165,6 +165,29 @@ Concise menu-tree (top → child → toggle/action)
             Nearby device-related features (Quick Share / SmartThings Find integration)
                 Disable Quick Share / SmartThings Find components as needed
 
+
+**Disabling Sensors instructions **
+Quick summary menu tree (top → child → toggle/action)
+
+    Settings
+        About phone
+            Software information
+                Build number → Tap 7 times → Enable Developer options
+        (or) Settings → Search: "Developer options"
+        System → Developer options
+            USB debugging → ON (required for ADB)
+            (Look for) Disable sensors (may appear as)
+                “Disable sensors”
+                “Disable all sensors”
+                “Sensors off”
+                Toggle → ON (disables device sensors)
+        Privacy (or Security & privacy)
+            Sensors Off (or “Sensors” / “Sensors privacy”)
+                Add Quick Settings tile (edit tiles) → Sensors off → Tap to enable
+        Connections / Location / Apps (for related effects)
+            Verify Find My, location services, Bluetooth behavior (these may be impacted)
+
+
 **Replacement APP stack. **
 
 **Rethink **
