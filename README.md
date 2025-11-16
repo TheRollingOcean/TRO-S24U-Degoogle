@@ -2,6 +2,9 @@
 A running wiki of how I degoogled my S24U and the privacy settings I used. This does not replace the entirty of the Samsung stack and allows for stability. 
 
 Here's my frozen app stack from Shizuku and FreezeYou!
+
+Note that this disables, Findmy, BLE, Smarthings integrations disables GMS, Samsung accounts, and locks the baseline at Android 15 (no OTA)
+
 **Google / AOSP (system-level)**
 
     com.google.audio.hearing.visualization.accessibility.scribe
@@ -111,4 +114,62 @@ Here's my frozen app stack from Shizuku and FreezeYou!
     com.sec.android.easyMover.Agent
     com.samsung.android.gru
 
+
+
 **On Permissions**
+**For BLE, other realated settings** (if they exist after stack removal)
+Concise menu-tree (top → child → toggle/action)
+
+    Settings
+        Connections
+            Bluetooth
+                Toggle: Bluetooth → Off
+                Optional: Bluetooth device list → Forget any saved devices (tap device → Forget)
+            More connection settings (or More connection options)
+                Nearby device scanning (or Nearby share / Nearby devices)
+                    Toggle: Nearby device scanning → Off
+  
+                Quick Share (Samsung) / Nearby Share (Google)
+                    Quick Share → Off
+                    Nearby Share → Off
+        
+        Location (or Connections > Location)
+            Use location → Off (optional; stops location-based BLE scanning)
+            Scanning (or Wi‑Fi and Bluetooth scanning)
+                Bluetooth scanning → Off
+                Wi‑Fi scanning → Off (optional)
+        Apps
+            Permission manager (or Settings > Privacy > Permission manager)
+                Nearby devices (or "Nearby devices" permission)
+                    For each app listed → Deny
+                Location
+                    Review apps that have Location permission → Set to Deny or “While using app” as desired
+                Bluetooth (or "Nearby & Bluetooth" permissions)
+                    BLUETOOTH_SCAN / BLUETOOTH_CONNECT / BLUETOOTH_ADVERTISE → Deny for apps you don’t trust
+            See all apps → (select specific app) → Permissions → Nearby devices / Location / Bluetooth → Deny
+        Security & privacy (or Biometrics and security)
+            Find My Device (Google)
+                Toggle: Find My Device (or “Find My Device” in Security) → Off
+                Alternative: Google account → myaccount.google.com/devices → Find My Device settings → Turn off
+            Find My Mobile (Samsung) — often under Biometrics and security
+                Settings > Biometrics and security > Find My Mobile → Turn off “Find My Mobile”
+                Turn off “Remote unlock” / “Send last location” if present
+                Sign out of Samsung account (if you want the feature fully disabled on device)
+        Google (Settings > Google)
+            Device security / Safety & emergency / Account services
+                Find My Device → Turn off (if present here)
+        Accounts (or Settings > Accounts and backup > Accounts)
+            Google account → Remove account (only if you want to sever Find My Device and syncing completely)
+            Samsung account → Remove account (only if you want to remove Samsung Find My Mobile)
+        Advanced features
+            Nearby device-related features (Quick Share / SmartThings Find integration)
+                Disable Quick Share / SmartThings Find components as needed
+
+**Replacement APP stack. **
+
+**Rethink **
+Block all except bypassed apps and IPs
+
+Configure how you want but things like Bluetooth won't be able to squack out. Unless you like that telemtry going back to Samsung. 
+
+ADB, Shizuku, FreezeYou (I really like the freeze shortcuts you can make.)
