@@ -1,9 +1,9 @@
 # S24UDegoogle
-A running wiki of how I degoogled my S24U and the privacy settings I used. This does not replace the entirty of the Samsung stack and allows for stability. 
+A running wiki of how I degoogled my S24U and the privacy settings I used. This does not replace the entirety of the Samsung stack and allows for stability. 
 
 Here's my frozen app stack from Shizuku and FreezeYou!
 
-Note that this disables, Findmy, BLE, Smarthings integrations disables GMS, Samsung and Google accounts, and locks the baseline at Android 15 (no OTA)
+Note that this disables, Findmy, BLE, Smarthings integrations disables GMS, Samsung and Google accounts, and locks the baseline at Android 15 (no OTA). Battery is great! 
 
 **Google / AOSP (system-level)**
 
