@@ -114,7 +114,22 @@ Note that this disables, Findmy, BLE, Smarthings integrations disables GMS, Sams
     com.sec.android.easyMover.Agent
     com.samsung.android.gru
 
+**Freezing Core Samsung OTA**
+```
+com.sec.android.soagent
+com.wssyncmldm
+com.sec.android.fotaclient
+com.sec.android.soagent.knox
+com.samsung.sdm
+com.samsung.syncml.dm
+```
 
+**Freezing Verizon Carrier OTA / Push**
+```
+com.vzw.apnlib
+com.vzw.hss.myverizon
+com.vzw.hs.android.modlite
+```
 
 **On Permissions**
 **For BLE, other realated settings** (if they exist after stack removal)
