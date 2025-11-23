@@ -242,6 +242,10 @@ adb shell pm disable-user --user 0 com.samsung.android.nearbyscanning
 **Rethink** 
 In global firewall, "Block all except bypassed apps and IPs" This is one of the few firewall and VPNs that use only one slot. Also enable block installed apps by default. 
 
+From article here: 
+```
+https://www.reddit.com/r/degoogle/comments/note_on_telemetry_vectors/
+```
 Telemetry also lives in the vendor stack.
 
 The vendor system stack/blobs has telemetry baked in, it's not just limited to applications.
