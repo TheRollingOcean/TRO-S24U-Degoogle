@@ -9,6 +9,8 @@ It relies on rethink to keep the proprietary app stack from reporting out.
 
 Debloat inpart from https://xdaforums.com/t/s24-ultra-debloat-and-privacy-list.4654142/
 
+Lots of research on r/fossdroid r/privacy and r/degoogle
+
 **Google / AOSP (system-level)**
 
     com.google.audio.hearing.visualization.accessibility.scribe
