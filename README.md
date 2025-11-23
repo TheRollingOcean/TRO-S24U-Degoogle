@@ -240,9 +240,7 @@ adb shell pm disable-user --user 0 com.samsung.android.nearbyscanning
 **Replacement APP stack.**
 
 **Rethink** 
-
-```
-In global firewall Block all except bypassed apps and IPs. This is one of the few firewall and VPNs that use only one slot. Also enable block installed apps by default. 
+In global firewall, "Block all except bypassed apps and IPs" This is one of the few firewall and VPNs that use only one slot. Also enable block installed apps by default. 
 
 Telemetry also lives in the vendor stack.
 
@@ -257,8 +255,6 @@ If you cannot flash an AOSP-based rom, a firewall with DNS hardening become your
 Sad that the current state of affairs is that we need firewalls to keep our information in, to thwart the intent of the underlying OS.
 
 But here we are. 
-
-```
 
 **TrackerControl** Configure Tracker control to not take a VPN slot, but it does correctly display correct trackers once apps are installed. 
 
