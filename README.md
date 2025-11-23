@@ -239,7 +239,26 @@ adb shell pm disable-user --user 0 com.samsung.android.nearbyscanning
 
 **Replacement APP stack.**
 
-**Rethink** In global firewall Block all except bypassed apps and IPs. This is one of the few firewall and VPNs that use only one slot. Also block installed apps by default. 
+**Rethink** 
+
+```
+In global firewall Block all except bypassed apps and IPs. This is one of the few firewall and VPNs that use only one slot. Also enable block installed apps by default. 
+
+Telemetry also lives in the vendor stack.
+
+The vendor system stack/blobs has telemetry baked in, it's not just limited to applications.
+
+This means bluetooth, wi-fi, and any OEM services like BLE, Find my, or Nearby services will still report.
+
+These are OS, system level utilities. Because the telemetry code runs at the system level as privileged daemons, removing apps doesn't stop services from collecting and transmitting data.
+
+If you cannot flash an AOSP-based rom, a firewall with DNS hardening become your last line of defense. Firewalls have to block OUTBOUND connections to know vendor telemetry endpoints: samsungcloud for example. I use Rethink for my firewall, DNS, and VPN.
+
+Sad that the current state of affairs is that we need firewalls to keep our information in, to thwart the intent of the underlying OS.
+
+But here we are. 
+
+```
 
 **TrackerControl** Configure Tracker control to not take a VPN slot, but it does correctly display correct trackers once apps are installed. 
 
