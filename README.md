@@ -224,6 +224,18 @@ adb shell settings put global settings_bluetooth_le_scan_mode 0
 
 **Rethink**
     
-In global firewall Block all except bypassed apps and IPs
+In global firewall Block all except bypassed apps and IPs. 
 
-ADB, Shizuku, FreezeYou (I really like the freeze shortcuts you can make.)
+This is one of the few firewall and VPNs that use only one slot
+
+**TrackerControl**
+
+Configure Tracker control to not take a VPN slot, but it does correctly display correct trackers that you can evaluate. 
+
+**Appmanager**
+
+Super detailed systems information. 
+
+**Canta** a classic, gives nice writeups
+
+**FreezeYou** I really like the freeze shortcuts you can make and save to the homescreen. 
