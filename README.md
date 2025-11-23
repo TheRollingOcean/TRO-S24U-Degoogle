@@ -224,16 +224,16 @@ adb shell pm disable-user --user 0 com.google.android.gms.location.history
 adb shell settings put global settings_bluetooth_le_scan_mode 0
 ```
 **Cross device communication**
-''' com.samsung.android.smartmirroring
+```com.samsung.android.smartmirroring
 com.samsung.android.aware.service
 com.samsung.android.nearbyservice
 com.samsung.android.upsell
-com.samsung.android.uwb '''
+com.samsung.android.uwb ```
 
 **Nearby Devices Scanning**
-''' adb shell pm disable-user --user 0 com.android.nearby.halfsheet
+```adb shell pm disable-user --user 0 com.android.nearby.halfsheet
 adb shell pm disable-user --user 0 com.google.android.nearby
-adb shell pm disable-user --user 0 com.samsung.android.nearbyscanning '''
+adb shell pm disable-user --user 0 com.samsung.android.nearbyscanning ```
 
 **Replacement APP stack.**
 
