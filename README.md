@@ -5,6 +5,10 @@ Here's my frozen app stack from Shizuku and FreezeYou!
 
 Note that this disables, Findmy, BLE, Smarthings integrations disables GMS, Samsung and Google accounts, and locks the baseline at Android 15 (no OTA). Battery is great! 
 
+It relies on rethink to keep the proprietary app stack from reporting out. 
+
+Debloat inpart from https://xdaforums.com/t/s24-ultra-debloat-and-privacy-list.4654142/
+
 **Google / AOSP (system-level)**
 
     com.google.audio.hearing.visualization.accessibility.scribe
@@ -218,24 +222,14 @@ adb shell pm disable-user --user 0 com.google.android.gms.location.history
 adb shell settings put global settings_bluetooth_le_scan_mode 0
 ```
 
-
-
 **Replacement APP stack.**
 
-**Rethink**
-    
-In global firewall Block all except bypassed apps and IPs. 
+**Rethink** In global firewall Block all except bypassed apps and IPs. This is one of the few firewall and VPNs that use only one slot. Also block installed apps by default. 
 
-This is one of the few firewall and VPNs that use only one slot
+**TrackerControl** Configure Tracker control to not take a VPN slot, but it does correctly display correct trackers once apps are installed. 
 
-**TrackerControl**
+**Appmanager** Super detailed systems information. 
 
-Configure Tracker control to not take a VPN slot, but it does correctly display correct trackers that you can evaluate. 
+**Canta** a classic, gives nice writeups on tools before you freeze them. 
 
-**Appmanager**
-
-Super detailed systems information. 
-
-**Canta** a classic, gives nice writeups
-
-**FreezeYou** I really like the freeze shortcuts you can make and save to the homescreen. 
+**FreezeYou** I really like the freeze shortcuts you can make and save to the homescreen. I prefer this over Canta. 
