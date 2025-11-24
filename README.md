@@ -11,6 +11,8 @@ Debloat inpart from https://xdaforums.com/t/s24-ultra-debloat-and-privacy-list.4
 
 Lots of research on r/fossdroid r/privacy and r/degoogle
 
+# Debloat Stack
+
 **Google / AOSP (system-level)**
 
     com.google.audio.hearing.visualization.accessibility.scribe
@@ -137,7 +139,7 @@ com.vzw.hss.myverizon
 com.vzw.hs.android.modlite
 ```
 
-**On Permissions**
+# On Permissions
 **For BLE, other realated settings** (if they exist after stack removal)
 Concise menu-tree (top → child → toggle/action)
 
@@ -207,7 +209,7 @@ Quick summary menu tree (top → child → toggle/action)
         Connections / Location / Apps (for related effects)
             Verify Find My, location services, Bluetooth behavior (these may be impacted)
 
-**BLE ADB Commands:**
+# BLE ADB Commands:**
 ```
 adb shell settings put global ble_scan_always_enabled 0
 adb shell pm disable-user --user 0 com.android.nearby.halfsheet
@@ -237,7 +239,7 @@ adb shell pm disable-user --user 0 com.google.android.nearby
 adb shell pm disable-user --user 0 com.samsung.android.nearbyscanning
 ```
 
-**Replacement APP stack.**
+# Replacement APP stack.**
 
 **Rethink** 
 In global firewall, "Block all except bypassed apps and IPs" This is one of the few firewall and VPNs that use only one slot. Also enable block installed apps by default. 
