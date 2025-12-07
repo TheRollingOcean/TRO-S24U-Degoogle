@@ -11,7 +11,7 @@ Debloat inpart from https://xdaforums.com/t/s24-ultra-debloat-and-privacy-list.4
 
 Lots of research on r/fossdroid r/privacy and r/degoogle
 
-# Debloat Stack
+## Debloat Stack
 
 **Google / AOSP (system-level)**
 
@@ -262,7 +262,7 @@ Sad that the current state of affairs is that we need firewalls to keep our info
 
 But here we are. 
 
-**TrackerControl** Configure Tracker control to not take a VPN slot, but it does correctly display correct trackers once apps are installed. 
+**TrackerControl** Configure Tracker control to not take a VPN slot, but it does correctly display trackers when apps are installed. 
 
 **Appmanager** Super detailed systems information. 
 
